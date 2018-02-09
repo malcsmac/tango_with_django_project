@@ -9,6 +9,7 @@
 		<h1>Rango says...</h1>
 		
 		<div>
+			<p>visits: {{ visits }}</p>
 			{% if user.is_authenticated %}
 				howdy {{ user.username }}!
 			{% else %}
@@ -46,7 +47,7 @@
 	                 {% endfor %}
 	             </ul>
 	        {% else %}
-	             <strong>There are no categories present.</strong>
+	             <strong>There are no pages present.</strong>
 	        {% endif %}
 				</div>
 			
